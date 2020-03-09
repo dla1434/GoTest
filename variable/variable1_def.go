@@ -9,4 +9,5 @@ var c, python, java bool
 
 func main() {
 	fmt.Println(x, y, z, c, python, java)
+	//0 0 0 false false false
 }

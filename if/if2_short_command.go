@@ -18,7 +18,7 @@ func pow(x, n, lim float64) float64 {
 	}
 	return lim
 }
-
+>
 func main() {
 	fmt.Println(
 		pow(3, 2, 10),

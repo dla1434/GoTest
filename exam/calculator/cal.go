@@ -20,8 +20,6 @@ func main() {
 
 	//line 변수를 trimSpace로 앞 뒤의 공백 제거
 	line = strings.TrimSpace(line)
-
-	//문자열을 숫자로 변경
 	n1, _ := strconv.Atoi(line)
 
 	fmt.Println("두번째 숫자를 입력하세요")
@@ -30,4 +28,19 @@ func main() {
 	n2, _ := strconv.Atoi(line)
 
 	fmt.Println("입력하신 숫자는 %d, %d 입니다.", n1, n2)
+	fmt.Println("연산자를 입력하세요")
+	line, _ = reader.ReadString('\n')
+	op := strings.TrimSpace(line)
+
+	if op == "+" {
+		fmt.Printf("%d + %d = %d", n1, n2, n1+n2)
+	} else if op == "-" {
+		fmt.Printf("%d - %d = %d", n1, n2, n1-n2)
+	} else if op == "*" {
+		fmt.Printf("%d * %d = %d", n1, n2, n1*n2)
+	} else if op == "/" {
+		fmt.Printf("%d / %d = %d", n1, n2, n1/n2)
+	} else {
+		fmt.Println("잘못 입력하셨습니다.")
+	}
 }

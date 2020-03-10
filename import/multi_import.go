@@ -6,6 +6,7 @@ import "fmt"
 import "math"
 */
 
+// 가로를 사용해서 import 수행
 import (
 	"fmt"
 	"math"
